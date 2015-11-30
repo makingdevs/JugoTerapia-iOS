@@ -15,6 +15,7 @@
 		E8D5A99F1C0BD823003E3667 /* JuicyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A99E1C0BD823003E3667 /* JuicyCategory.swift */; };
 		E8D5A9A11C0C12DC003E3667 /* JuicyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9A01C0C12DC003E3667 /* JuicyListViewController.swift */; };
 		E8D5A9A31C0C1374003E3667 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9A21C0C1374003E3667 /* Juice.swift */; };
+		E8D5A9A51C0C21FF003E3667 /* JuiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9A41C0C21FF003E3667 /* JuiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E8D5A99E1C0BD823003E3667 /* JuicyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuicyCategory.swift; sourceTree = "<group>"; };
 		E8D5A9A01C0C12DC003E3667 /* JuicyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuicyListViewController.swift; sourceTree = "<group>"; };
 		E8D5A9A21C0C1374003E3667 /* Juice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
+		E8D5A9A41C0C21FF003E3667 /* JuiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				E8D5A98B1C0BD154003E3667 /* CategoryViewController.swift */,
 				E8D5A9A01C0C12DC003E3667 /* JuicyListViewController.swift */,
+				E8D5A9A41C0C21FF003E3667 /* JuiceViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				E8D5A98C1C0BD154003E3667 /* CategoryViewController.swift in Sources */,
 				E8D5A98A1C0BD154003E3667 /* AppDelegate.swift in Sources */,
 				E8D5A99F1C0BD823003E3667 /* JuicyCategory.swift in Sources */,
+				E8D5A9A51C0C21FF003E3667 /* JuiceViewController.swift in Sources */,
 				E8D5A9A11C0C12DC003E3667 /* JuicyListViewController.swift in Sources */,
 				E8D5A9A31C0C1374003E3667 /* Juice.swift in Sources */,
 			);
