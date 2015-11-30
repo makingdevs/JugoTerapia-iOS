@@ -10,7 +10,8 @@ struct JuicyCategory {
   let id:Int
   let categoryName:String
   
-  init(categoryName:String){
+  init(id: Int, categoryName:String){
+    self.id = id
     self.categoryName = categoryName
   }
 }
