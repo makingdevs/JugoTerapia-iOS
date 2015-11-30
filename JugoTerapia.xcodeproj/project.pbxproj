@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E8D5A98A1C0BD154003E3667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9891C0BD154003E3667 /* AppDelegate.swift */; };
-		E8D5A98C1C0BD154003E3667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A98B1C0BD154003E3667 /* ViewController.swift */; };
+		E8D5A98C1C0BD154003E3667 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A98B1C0BD154003E3667 /* CategoryViewController.swift */; };
 		E8D5A98F1C0BD154003E3667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D5A98D1C0BD154003E3667 /* Main.storyboard */; };
 		E8D5A9911C0BD154003E3667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D5A9901C0BD154003E3667 /* Assets.xcassets */; };
 		E8D5A9941C0BD154003E3667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D5A9921C0BD154003E3667 /* LaunchScreen.storyboard */; };
+		E8D5A99F1C0BD823003E3667 /* JuicyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A99E1C0BD823003E3667 /* JuicyCategory.swift */; };
+		E8D5A9A11C0C12DC003E3667 /* JuicyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9A01C0C12DC003E3667 /* JuicyListViewController.swift */; };
+		E8D5A9A31C0C1374003E3667 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9A21C0C1374003E3667 /* Juice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8D5A9861C0BD154003E3667 /* JugoTerapia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JugoTerapia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D5A9891C0BD154003E3667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8D5A98B1C0BD154003E3667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8D5A98B1C0BD154003E3667 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E8D5A98E1C0BD154003E3667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8D5A9901C0BD154003E3667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8D5A9931C0BD154003E3667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8D5A9951C0BD154003E3667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D5A99E1C0BD823003E3667 /* JuicyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuicyCategory.swift; sourceTree = "<group>"; };
+		E8D5A9A01C0C12DC003E3667 /* JuicyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuicyListViewController.swift; sourceTree = "<group>"; };
+		E8D5A9A21C0C1374003E3667 /* Juice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		E8D5A9881C0BD154003E3667 /* JugoTerapia */ = {
 			isa = PBXGroup;
 			children = (
+				E8D5A99D1C0BD7EB003E3667 /* Storyboard */,
+				E8D5A99C1C0BD7E6003E3667 /* Controller */,
+				E8D5A99B1C0BD7E0003E3667 /* Models */,
 				E8D5A9891C0BD154003E3667 /* AppDelegate.swift */,
-				E8D5A98B1C0BD154003E3667 /* ViewController.swift */,
-				E8D5A98D1C0BD154003E3667 /* Main.storyboard */,
 				E8D5A9901C0BD154003E3667 /* Assets.xcassets */,
-				E8D5A9921C0BD154003E3667 /* LaunchScreen.storyboard */,
 				E8D5A9951C0BD154003E3667 /* Info.plist */,
 			);
 			path = JugoTerapia;
+			sourceTree = "<group>";
+		};
+		E8D5A99B1C0BD7E0003E3667 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8D5A99E1C0BD823003E3667 /* JuicyCategory.swift */,
+				E8D5A9A21C0C1374003E3667 /* Juice.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E8D5A99C1C0BD7E6003E3667 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8D5A98B1C0BD154003E3667 /* CategoryViewController.swift */,
+				E8D5A9A01C0C12DC003E3667 /* JuicyListViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E8D5A99D1C0BD7EB003E3667 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E8D5A98D1C0BD154003E3667 /* Main.storyboard */,
+				E8D5A9921C0BD154003E3667 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D5A98C1C0BD154003E3667 /* ViewController.swift in Sources */,
+				E8D5A98C1C0BD154003E3667 /* CategoryViewController.swift in Sources */,
 				E8D5A98A1C0BD154003E3667 /* AppDelegate.swift in Sources */,
+				E8D5A99F1C0BD823003E3667 /* JuicyCategory.swift in Sources */,
+				E8D5A9A11C0C12DC003E3667 /* JuicyListViewController.swift in Sources */,
+				E8D5A9A31C0C1374003E3667 /* Juice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
