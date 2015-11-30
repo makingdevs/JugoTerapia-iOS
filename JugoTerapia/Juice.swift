@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Juicy {
+struct Juice {
   let id: Int
   let juiceName: String
   

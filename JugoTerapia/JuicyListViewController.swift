@@ -12,11 +12,22 @@ class JuicyListViewController: UITableViewController {
   
   var juices:[Juice] = []
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    let j1 = Juice(id: 1, juiceName: "Jugo contra la anemia")
+    let j2 = Juice(id: 2, juiceName: "Jugo contra la tos")
+    let j3 = Juice(id: 3, juiceName: "Jugo contra tu mama")
+    let j4 = Juice(id: 4, juiceName: "Jugo contra la tarugada")
+    juices += [j1,j2,j3,j4]
+  }
+  
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    <#code#>
+    let cell = tableView.dequeueReusableCellWithIdentifier("juiceCell",forIndexPath: indexPath)
+    cell.textLabel?.text = juices[indexPath.row].juiceName
+    return cell
   }
  
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    <#code#>
+    return juices.count
   }
 }
