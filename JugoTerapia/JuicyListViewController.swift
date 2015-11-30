@@ -14,10 +14,10 @@ class JuicyListViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let j1 = Juice(id: 1, juiceName: "Jugo contra la anemia")
-    let j2 = Juice(id: 2, juiceName: "Jugo contra la tos")
-    let j3 = Juice(id: 3, juiceName: "Jugo contra tu mama")
-    let j4 = Juice(id: 4, juiceName: "Jugo contra la tarugada")
+    let j1 = Juice(id: 1, juiceName: "Jugo contra la anemia", ingredients: "", recipe: "")
+    let j2 = Juice(id: 2, juiceName: "Jugo contra la tos", ingredients: "", recipe: "")
+    let j3 = Juice(id: 3, juiceName: "Jugo contra tu mama", ingredients: "", recipe: "")
+    let j4 = Juice(id: 4, juiceName: "Jugo contra la tarugada", ingredients: "", recipe: "")
     juices += [j1,j2,j3,j4]
   }
   

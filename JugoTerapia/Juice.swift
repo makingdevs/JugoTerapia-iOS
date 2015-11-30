@@ -11,9 +11,13 @@ import Foundation
 struct Juice {
   let id: Int
   let juiceName: String
+  let ingredients: String
+  let recipe: String
   
-  init(id:Int, juiceName: String){
+  init(id:Int, juiceName: String, ingredients: String, recipe: String){
     self.id = id
     self.juiceName = juiceName
+    self.ingredients = ingredients
+    self.recipe = recipe
   }
 }
