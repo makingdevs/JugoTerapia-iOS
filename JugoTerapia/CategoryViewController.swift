@@ -36,6 +36,11 @@ class CategoryViewController: UITableViewController {
     })
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let juicyListVC: JuicyListViewController = segue.destinationViewController as! JuicyListViewController
+    let rowSelected = tableView.indexPathForSelectedRow
+    juicyListVC.selectedCategoryId = (rowSelected?.row)!
+  }
 
 }
 
