@@ -10,12 +10,17 @@ import UIKit
 
 class JuicyListViewController: UITableViewController {
 
+  // TODO: Change by a category
   var selectedCategoryId:Int = 0
   var juices:[Juice] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    retrieveJuicesFromManager()
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -26,5 +31,16 @@ class JuicyListViewController: UITableViewController {
  
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return juices.count
+  }
+  
+  private func retrieveJuicesFromManager(){
+    JuicyManager.findAllByCategoryId(selectedCategoryId,
+      onSuccess: { (juices:[Juice]) -> () in
+        self.juices = juices
+        self.tableView.reloadData()
+      },
+      onError: { (error:String) -> () in
+        print("Can't load")
+    })
   }
 }
