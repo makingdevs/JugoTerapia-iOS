@@ -32,6 +32,11 @@ class JuicyListViewController: UITableViewController {
     return juices.count
   }
   
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let juiceVC: JuiceViewController = segue.destinationViewController as! JuiceViewController
+    juiceVC.juice = juices[(tableView.indexPathForSelectedRow?.row)!]
+  }
+  
   private func retrieveJuicesFromManager(){
     JuicyManager.findAllByCategoryId(selectedCategory!,
       onSuccess: { (juices:[Juice]) -> () in

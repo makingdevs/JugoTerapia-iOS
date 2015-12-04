@@ -13,4 +13,12 @@ class JuiceViewController: UIViewController {
   @IBOutlet weak var juiceNameLabel: UILabel!
   @IBOutlet weak var juiceIngredientesLabel: UILabel!
   @IBOutlet weak var juiceRecipeLabel: UILabel!
+  var juice:Juice!
+  
+  override func viewWillAppear(animated: Bool) {
+    juiceNameLabel.text = juice.juiceName
+    juiceIngredientesLabel.text = juice.ingredients
+    juiceRecipeLabel.text = juice.recipe
+  }
+  
 }
