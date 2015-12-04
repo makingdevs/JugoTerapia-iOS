@@ -39,7 +39,7 @@ class CategoryViewController: UITableViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     let juicyListVC: JuicyListViewController = segue.destinationViewController as! JuicyListViewController
     let rowSelected = tableView.indexPathForSelectedRow
-    juicyListVC.selectedCategoryId = (rowSelected?.row)! + 1
+    juicyListVC.selectedCategory = categories[(rowSelected?.row)!]
   }
 
 }

@@ -10,8 +10,7 @@ import UIKit
 
 class JuicyListViewController: UITableViewController {
 
-  // TODO: Change by a category
-  var selectedCategoryId:Int = 0
+  var selectedCategory:JuicyCategory?
   var juices:[Juice] = []
   
   override func viewDidLoad() {
@@ -34,7 +33,7 @@ class JuicyListViewController: UITableViewController {
   }
   
   private func retrieveJuicesFromManager(){
-    JuicyManager.findAllByCategoryId(selectedCategoryId,
+    JuicyManager.findAllByCategoryId(selectedCategory!,
       onSuccess: { (juices:[Juice]) -> () in
         self.juices = juices
         self.tableView.reloadData()

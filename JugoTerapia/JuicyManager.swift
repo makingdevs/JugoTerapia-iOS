@@ -12,9 +12,9 @@ import SwiftyJSON
 
 class JuicyManager {
   
-  static func findAllByCategoryId(categoryId: Int, onSuccess:(juices:[Juice]) -> (), onError:(error:String) -> ()){
+  static func findAllByCategoryId(category: JuicyCategory, onSuccess:(juices:[Juice]) -> (), onError:(error:String) -> ()){
     
-    let parameters = ["categoryId":categoryId]
+    let parameters = ["categoryId":category.id]
     
     Alamofire.request(.POST, "http://jugoterapia.josdem.io/jugoterapia-server/beverage/beverages", parameters: parameters).responseJSON { response in
       switch response.result {
