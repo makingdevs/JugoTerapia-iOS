@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Categorías-->
@@ -19,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eGw-L0-RS0" id="XqO-D7-kde">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -54,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xf9-eh-7Qj" id="4c0-gO-gZ3">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -87,8 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-nk-HTd">
-                                <rect key="frame" x="20" y="72" width="560" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-nk-HTd">
+                                <rect key="frame" x="226" y="72" width="149" height="24"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nombre del jugo">
@@ -101,30 +102,36 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKT-2G-Kyq">
-                                <rect key="frame" x="20" y="120" width="560" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Receta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-dO-VEI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-dO-VEI">
                                 <rect key="frame" x="20" y="320" width="560" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eWU-vi-MeQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUx-5h-Qdt">
-                                <rect key="frame" x="20" y="158" width="560" height="154"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUx-5h-Qdt">
+                                <rect key="frame" x="20" y="158" width="560" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYP-yl-G38">
-                                <rect key="frame" x="20" y="358" width="560" height="154"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYP-yl-G38">
+                                <rect key="frame" x="20" y="358" width="560" height="20.5"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKT-2G-Kyq">
+                                <rect key="frame" x="20" y="109" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l85-QT-hfz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -132,6 +139,23 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="trailing" secondItem="pYP-yl-G38" secondAttribute="trailing" id="0Ua-Ag-hQs"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="leading" secondItem="pYP-yl-G38" secondAttribute="leading" id="59s-0p-HKB"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="leading" secondItem="bUx-5h-Qdt" secondAttribute="leading" id="5DY-Me-nDS"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="centerX" secondItem="zhS-nk-HTd" secondAttribute="centerX" id="IUU-8Z-LP1"/>
+                            <constraint firstAttribute="bottom" secondItem="gJD-dO-VEI" secondAttribute="bottom" constant="250" id="IUm-mx-9lt"/>
+                            <constraint firstItem="zhS-nk-HTd" firstAttribute="top" secondItem="SwG-tc-7QA" secondAttribute="bottom" constant="8" id="ONF-8K-yWQ"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="trailing" secondItem="bUx-5h-Qdt" secondAttribute="trailing" id="RiR-F5-vyg"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="top" secondItem="xYX-lN-V5a" secondAttribute="top" constant="109" id="V3H-uN-XQF"/>
+                            <constraint firstItem="zhS-nk-HTd" firstAttribute="centerX" secondItem="xYX-lN-V5a" secondAttribute="centerX" id="d5d-4Z-oQz"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="leading" secondItem="xYX-lN-V5a" secondAttribute="leadingMargin" id="qZJ-zj-rF2"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="leading" secondItem="gJD-dO-VEI" secondAttribute="leading" id="ssW-GJ-iff"/>
+                            <constraint firstItem="pYP-yl-G38" firstAttribute="top" secondItem="gJD-dO-VEI" secondAttribute="bottom" constant="8" symbolic="YES" id="tcx-Tj-1xb"/>
+                            <constraint firstItem="bUx-5h-Qdt" firstAttribute="top" secondItem="zKT-2G-Kyq" secondAttribute="bottom" constant="19" id="wji-Tr-CLf"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="top" secondItem="zhS-nk-HTd" secondAttribute="bottom" constant="13.5" id="x63-cU-7jM"/>
+                            <constraint firstItem="zKT-2G-Kyq" firstAttribute="trailing" secondItem="gJD-dO-VEI" secondAttribute="trailing" id="z9W-5d-wfn"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="juiceIngredientesLabel" destination="bUx-5h-Qdt" id="OfV-Yx-C5z"/>
