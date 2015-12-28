@@ -16,6 +16,8 @@ class JuiceViewController: UIViewController {
   var juice:Juice!
   
   override func viewWillAppear(animated: Bool) {
+    juiceRecipeLabel.sizeToFit()
+    juiceIngredientesLabel.sizeToFit()
     juiceNameLabel.text = juice.juiceName
     juiceIngredientesLabel.text = juice.ingredients
     juiceRecipeLabel.text = juice.recipe
