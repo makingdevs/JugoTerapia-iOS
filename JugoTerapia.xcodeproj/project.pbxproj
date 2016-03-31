@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5A56C49F6F32CCD57D8661 /* Pods_JugoTerapia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9D723F47FF289F10D38489 /* Pods_JugoTerapia.framework */; };
+		288A3EDA104CCD95D167FA26 /* Pods_JugoTerapia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E63AE98C1035153177C9E5 /* Pods_JugoTerapia.framework */; };
 		E8B864FF1C0E85490000A364 /* JuiceCategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B864FE1C0E85490000A364 /* JuiceCategoryManager.swift */; };
 		E8B865011C0E93990000A364 /* JuicyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B865001C0E93990000A364 /* JuicyManager.swift */; };
 		E8D5A98A1C0BD154003E3667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D5A9891C0BD154003E3667 /* AppDelegate.swift */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		422372E317BE4A8B3C70700F /* Pods-JugoTerapia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JugoTerapia.release.xcconfig"; path = "Pods/Target Support Files/Pods-JugoTerapia/Pods-JugoTerapia.release.xcconfig"; sourceTree = "<group>"; };
-		8D9D723F47FF289F10D38489 /* Pods_JugoTerapia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JugoTerapia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6EB24874A98B37F3D4871AB /* Pods-JugoTerapia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JugoTerapia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JugoTerapia/Pods-JugoTerapia.debug.xcconfig"; sourceTree = "<group>"; };
+		6246E262EDAD6206F02A63B1 /* Pods-JugoTerapia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JugoTerapia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JugoTerapia/Pods-JugoTerapia.debug.xcconfig"; sourceTree = "<group>"; };
+		64EB1153B33E3F495E3D62C9 /* Pods-JugoTerapia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JugoTerapia.release.xcconfig"; path = "Pods/Target Support Files/Pods-JugoTerapia/Pods-JugoTerapia.release.xcconfig"; sourceTree = "<group>"; };
+		C2E63AE98C1035153177C9E5 /* Pods_JugoTerapia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JugoTerapia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B864FE1C0E85490000A364 /* JuiceCategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceCategoryManager.swift; sourceTree = "<group>"; };
 		E8B865001C0E93990000A364 /* JuicyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuicyManager.swift; sourceTree = "<group>"; };
 		E8D5A9861C0BD154003E3667 /* JugoTerapia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JugoTerapia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,26 +45,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5A56C49F6F32CCD57D8661 /* Pods_JugoTerapia.framework in Frameworks */,
+				288A3EDA104CCD95D167FA26 /* Pods_JugoTerapia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32E5EAAEE4353672094EF927 /* Frameworks */ = {
+		15620FFD6B63A40A6AB449AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D9D723F47FF289F10D38489 /* Pods_JugoTerapia.framework */,
+				C2E63AE98C1035153177C9E5 /* Pods_JugoTerapia.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4608A7B56ECFF548ADD16EA5 /* Pods */ = {
+		5D6FB3017126C3FD8FF6B4FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6EB24874A98B37F3D4871AB /* Pods-JugoTerapia.debug.xcconfig */,
-				422372E317BE4A8B3C70700F /* Pods-JugoTerapia.release.xcconfig */,
+				6246E262EDAD6206F02A63B1 /* Pods-JugoTerapia.debug.xcconfig */,
+				64EB1153B33E3F495E3D62C9 /* Pods-JugoTerapia.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -74,8 +74,8 @@
 			children = (
 				E8D5A9881C0BD154003E3667 /* JugoTerapia */,
 				E8D5A9871C0BD154003E3667 /* Products */,
-				4608A7B56ECFF548ADD16EA5 /* Pods */,
-				32E5EAAEE4353672094EF927 /* Frameworks */,
+				5D6FB3017126C3FD8FF6B4FE /* Pods */,
+				15620FFD6B63A40A6AB449AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,12 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8D5A9981C0BD154003E3667 /* Build configuration list for PBXNativeTarget "JugoTerapia" */;
 			buildPhases = (
-				513D936EACE31106F1B2BA84 /* Check Pods Manifest.lock */,
+				DD6D78E2904D6F1C14616410 /* 📦 Check Pods Manifest.lock */,
 				E8D5A9821C0BD154003E3667 /* Sources */,
 				E8D5A9831C0BD154003E3667 /* Frameworks */,
 				E8D5A9841C0BD154003E3667 /* Resources */,
-				2CF974983CABD49AAE3AC2A6 /* Embed Pods Frameworks */,
-				6E2DF5AB797708130FCA93AA /* Copy Pods Resources */,
+				6EA202A9B8228E80235C7B0D /* 📦 Embed Pods Frameworks */,
+				7B26ACED44A0060CE41742A2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,14 +200,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2CF974983CABD49AAE3AC2A6 /* Embed Pods Frameworks */ = {
+		6EA202A9B8228E80235C7B0D /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,34 +215,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JugoTerapia/Pods-JugoTerapia-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		513D936EACE31106F1B2BA84 /* Check Pods Manifest.lock */ = {
+		7B26ACED44A0060CE41742A2 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6E2DF5AB797708130FCA93AA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JugoTerapia/Pods-JugoTerapia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6D78E2904D6F1C14616410 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -368,7 +368,7 @@
 		};
 		E8D5A9991C0BD154003E3667 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6EB24874A98B37F3D4871AB /* Pods-JugoTerapia.debug.xcconfig */;
+			baseConfigurationReference = 6246E262EDAD6206F02A63B1 /* Pods-JugoTerapia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JugoTerapia/Info.plist;
@@ -380,7 +380,7 @@
 		};
 		E8D5A99A1C0BD154003E3667 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 422372E317BE4A8B3C70700F /* Pods-JugoTerapia.release.xcconfig */;
+			baseConfigurationReference = 64EB1153B33E3F495E3D62C9 /* Pods-JugoTerapia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JugoTerapia/Info.plist;
